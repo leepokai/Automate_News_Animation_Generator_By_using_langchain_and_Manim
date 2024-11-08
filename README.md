@@ -37,7 +37,7 @@ An automated tool that generates Manim animations from news articles using AI. T
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/leepokai/Automate_News_Animation_Generator_By_Manim.git
+git clone https://github.com/leepokai/Automate_News_Animation_Generator_By_using_langchain_and_Manim.git
 cd Automate_News_Animation_Generator_By_Manim
 ```
 
@@ -163,3 +163,40 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Anthropic's Claude 3
 - NewsAPI
 - LangChain framework
+
+## Future Goals -> Long Video Generation
+
+### Long Text Processing Enhancement 📚
+- **Text Segmentation**: 
+  - Implement intelligent text chunking
+  - Maintain context coherence between segments
+  - Handle varying chunk sizes adaptively
+
+
+### Video Integration System 🎯
+- **Video Merging Pipeline**:
+  ```python
+  # Future implementation concept
+  class VideoMerger:
+      def merge_segments(self, video_segments):
+          """
+          Merge multiple video segments into one cohesive video
+          while maintaining transitions and timing
+          """
+          pass
+  ```
+### Implementation Plan 🚀
+1. **Phase 1: Text Processing**
+   - Implement text segmentation logic
+   - Add context preservation
+   - Handle various text formats
+
+2. **Phase 2: Parallel Animation**
+   - Generate animations for each segment
+   - Maintain style consistency
+   - Process segments concurrently
+
+3. **Phase 3: Video Integration**
+   - Implement video merging
+   - Add smooth transitions
+   - Ensure quality consistency
