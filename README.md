@@ -38,7 +38,7 @@ An automated tool that generates Manim animations from news articles using AI. T
 1. Clone the repository:
 ```bash
 git clone https://github.com/leepokai/Automate_News_Animation_Generator_By_using_langchain_and_Manim.git
-cd Automate_News_Animation_Generator_By_Manim
+cd Automate_News_Animation_Generator_By_using_langchain_and_Manim
 ```
 
 2. Create and activate virtual environment:
