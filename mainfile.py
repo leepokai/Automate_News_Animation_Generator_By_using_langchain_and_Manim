@@ -59,7 +59,7 @@ class ManimAutomation:
             5. Professional animations and timing
             6. Minimum 30-second duration
             7. Do not output any text except the code
-            
+            8. use Text instead of Tex to avoid LaTeX issues
             Example structure (do not copy directly):
             ```python
             from manim import *
@@ -96,7 +96,8 @@ class ManimAutomation:
         """generate manim code based on story"""
         try:
             manim_code = self.chain.invoke({"story": story})
-            manim_code = self.output_code_parser(manim_code)
+
+            manim_code = self.output_code_parser(manim_code["text"])
             # 將生成的代碼保存到文件
             #print(manim_code[manim_code.index("```python")+9:manim_code.rindex("```")])
             with open("generated_animation.py", "w", encoding="utf-8") as f:
